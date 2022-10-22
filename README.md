@@ -1,8 +1,7 @@
 # Database_homework1
-Content : Database first-job northwind &amp; sql
----------------------------------------
-Author : HuYujia
----------------------------------------
+## Content : Database first-job northwind &amp; sql
+## Author : HuYujia
+
 1.Get all unique ShipNames from the Order table that contain a hyphen '-'.
 Details: In addition, get all the characters preceding the (first) hyphen. Return ship names alphabetically.
 
