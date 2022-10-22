@@ -13,5 +13,5 @@ WhERE ShipName like '%-%'
 Order by ShipName asc;
 ```
 ![]
-(https://github.com/YujiaHu1109/Database_homework1/raw/result/q1.png)
+(https://github.com/YujiaHu1109/Database_homework1/raw/master/results/q1.png)
 
