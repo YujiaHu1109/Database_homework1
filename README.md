@@ -2,7 +2,8 @@
 ## Content : Database first-job northwind &amp; sql
 ## Author : HuYujia
 
-1.Get all unique ShipNames from the Order table that contain a hyphen '-'.
+**1.Get all unique ShipNames from the Order table that contain a hyphen '-'.**
+
 Details: In addition, get all the characters preceding the (first) hyphen. Return ship names alphabetically.
 
 `My code`
@@ -17,7 +18,8 @@ Order by ShipName asc;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q1.png)
 
-2.Indicate if an order's ShipCountry is in North America. For our purposes, this is 'USA', 'Mexico', 'Canada'
+**2.Indicate if an order's ShipCountry is in North America. For our purposes, this is 'USA', 'Mexico', 'Canada'**
+
 Details: You should print the Order Id, ShipCountry, and another column that is 
 either 'NorthAmerica' or 'OtherPlace' depending on the Ship Country.Order by the primary key (Id) ascending and return 20 rows starting from Order Id 15445.
 
@@ -37,7 +39,8 @@ WHERE Id>=15445 and Id<=15464;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q2.png)
 
-3.For each Shipper, find the percentage of orders which are late.
+**3.For each Shipper, find the percentage of orders which are late.**
+
 Details: An order is considered late if ShippedDate > RequiredDate. Print the following format, order by descending precentage, rounded to the nearest hundredths.
 
 `My code`
@@ -62,7 +65,8 @@ ORDER BY DP desc;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q3.png)
 
-4.Compute some statistics about categories of products
+**4.Compute some statistics about categories of products**
+
 Details: Get the number of products, average unit price (rounded to 2 decimal places), minimum unit price, maximum unit price, and total units on order for categories containing greater than 10 products.Order by Category Id.
 
 `My code`(ignore Discount)
@@ -103,7 +107,8 @@ ORDER BY Category.Id;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q4.png)
 
-5.For each of the 8 discontinued products in the database, which customer made the first ever order for the product? Output the customer's CompanyName and ContactName
+**5.For each of the 8 discontinued products in the database, which customer made the first ever order for the product? Output the customer's CompanyName and ContactName**
+
 Details: Print the following format, order by ProductName alphabetically.
 
 `My code`
@@ -123,7 +128,8 @@ Order by p1.ProductName;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q5.png)
 
-6.For the first 10 orders by CutomerId BLONP: get the Order's Id, OrderDate, previous OrderDate, and difference between the previous and current. Return results ordered by OrderDate (ascending)
+**6.For the first 10 orders by CutomerId BLONP: get the Order's Id, OrderDate, previous OrderDate, and difference between the previous and current. Return results ordered by OrderDate (ascending)**
+
 Details: The "previous" OrderDate for the first order should default to itself (lag time = 0). Use the julianday() function for date arithmetic (example).Use lag(expr, offset, default) for grabbing previous dates. Please round the lag time to the nearest hundredth.
 
 `My code`
@@ -139,7 +145,8 @@ LIMIT 10;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q6.png)
 
-7.For each Customer, get the CompanyName, CustomerId, and "total expenditures". Output the bottom quartile of Customers, as measured by total expenditures.
+**7.For each Customer, get the CompanyName, CustomerId, and "total expenditures". Output the bottom quartile of Customers, as measured by total expenditures.**
+
 Details: Calculate expenditure using UnitPrice and Quantity (ignore Discount). Compute the quartiles for each company's total expenditures using NTILE. The bottom quartile is the 1st quartile, order them by increasing expenditure.Make sure your output is formatted as follows (round expenditure to nearest hundredths)
 
 `My code`
@@ -163,7 +170,8 @@ Where gn = 1;
 
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q7.png)
 
-8.Find the youngest employee serving each Region. If a Region is not served by an employee, ignore it.
+**8.Find the youngest employee serving each Region. If a Region is not served by an employee, ignore it.**
+
 Details: Print the Region Description, First Name, Last Name, and Birth Date. Order by Region Id.
 
 `My code`
@@ -185,7 +193,8 @@ Order BY r1.Id asc;
 ![](https://github.com/YujiaHu1109/Database_homework1/blob/main/results/q8.png)
 
 
-9.Concatenate the ProductNames ordered by the Company 'Queen Cozinha' on 2014-12-25
+**9.Concatenate the ProductNames ordered by the Company 'Queen Cozinha' on 2014-12-25**
+
 Details: Order the products by Id (ascending). Print a single string containing all the dup names separated by commas
 
 `My code`
