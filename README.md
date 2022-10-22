@@ -12,3 +12,5 @@ FROM [Order]
 WhERE ShipName like '%-%'
 Order by ShipName asc;
 ```
+![]
+(https://github.com/YujiaHu1109/Database_homework1/raw/ 分支名 / 存放图片的文件夹 / 该文件夹下的图片)
